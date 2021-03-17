@@ -116,7 +116,7 @@ public class TestEphemeralStore extends BaseTest {
         .when(client.getCache())
         .thenReturn(cache);
 
- @SuppressWarnings("unchecked")
+    @SuppressWarnings("unchecked")
     final MappingListenerManager<PathChildrenCacheListener,PathChildrenCacheListener> container = Mockito.mock(MappingListenerManager.class);
     Mockito
         .when(cache.getListenable())
